@@ -13,4 +13,4 @@ The Student Consultation Booking System is a web-based platform developed to sim
 - **Consultation Slot Management:** Lecturers can create, update, and delete available consultation time slots.
 - **Flexible Consultation Modes:** Supports both **Online** (with meeting links) and **Face-to-Face** (with physical room/location details) sessions.
 - **Double-Booking Prevention:** Automatically locks booked time slots so two students cannot book the same lecturer at the same time.
-- **Real-Time Status Tracking:** Tracks every appointment across `Pending`, `Approved`, `Rejected`, and `Completed` states.
+- **Real-Time Status Tracking:** Tracks every appointment across Pending, Approved, Rejected, and Completed states.
