@@ -7,10 +7,9 @@ The Student Consultation Booking System is a web-based platform developed to sim
 
 | No. | Name | Matric Number | GitHub Username | Assigned Responsibility (D4) |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | **CHAN ZHENG HAO** | 311873 | `@username1` | **Modification 1:** Consultation Status & Related Testing |
-| 2 | **SEE EE VONNE** | 312626 | `@username2` | **Modification 2:** Double-Booking Prevention & Related Testing |
-| 3 | **FOONG HOE YIEN** | 312169 | `@username3` | **Modification 3:** Consultation Type & Related Testing |
-| All | *Collaborative* | - | - | **Modification 4:** Improve Existing Function & Overall System Integration |
+| 1 | **CHAN ZHENG HAO** | 311873 | `@chanzh-clint` | **Modification 1:** Consultation Status & Related Testing |
+| 2 | **SEE EE VONNE** | 312626 | `@eevoneee12-cloud` | **Modification 2:** Double-Booking Prevention & Related Testing |
+| 3 | **FOONG HOE YIEN** | 312169 | `@hoeyien1010-beep` | **Modification 3:** Consultation Type & Related Testing |
 
 ---
 
@@ -181,14 +180,3 @@ Non-functional requirements describe the quality attributes and performance stan
 | **TC-09** | Online Consultation | Student selects `Online` and lecturer provides a meeting link | System displays the online meeting link for the session. | *Pending / As expected* | **PASS** |
 | **TC-10** | Existing Function Improvement *(Mod 4)* | *[Insert test input for Mod 4]* | *[Insert expected result for Mod 4]* | *Pending / As expected* | **PASS** |
 
----
-
-## 7. Deliverables & Submission Progress
-
-| Deliverable | Submission | Deadline | Weight | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **D1** | Requirements Analysis | Week 8 | 5% | Completed |
-| **D2** | Software Design | Week 9 | 5% | In Progress |
-| **D3** | Working System – Version 1 | Week 10 | 10% | Pending |
-| **D4** | Code Modification & Testing | Week 11 | 10% | Pending |
-| **D5** | Final System, Demonstration & Individual Presentation | Week 13 | 10% | Pending |
