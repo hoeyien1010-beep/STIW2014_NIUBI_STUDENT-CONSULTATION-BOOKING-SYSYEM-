@@ -169,7 +169,7 @@ Non-functional requirements describe the quality attributes and performance stan
 
 | Test ID | Test Case | Input | Expected Result | Actual Result | Pass / Fail |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **TC-01** | Successful Login | Valid registered student/lecturer credentials | User logs in successfully and is redirected to the dashboard. | *Pending / As expected* | **PASS** |
+| **TC-01** | Successful Login | Valid registered student/lecturer credentials | User logs in successfully and is redirected to the dashboard. | *-* | **-** |
 | **TC-02** | Invalid Login | Unregistered email or incorrect password | Login is rejected with an error message. | *Pending / As expected* | **PASS** |
 | **TC-03** | Successful Booking | Student selects an open slot, chooses consultation type, and submits request | Booking is created with status `Pending`. | *Pending / As expected* | **PASS** |
 | **TC-04** | Double Booking | Student attempts to book a lecturer's time slot that is already booked | System blocks booking and displays: `"This consultation slot is no longer available."` | *Pending / As expected* | **PASS** |
