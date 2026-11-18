@@ -120,22 +120,10 @@ Non-functional requirements describe the quality attributes and performance stan
 
 ---
 
-## 4. Software Design & Architecture (Deliverable 2)
-
-*(Upload your diagram images into a `/docs` folder in your repository to display them below)*
-
-* **Use Case Diagram:** `[View Use Case Diagram](./docs/use_case_diagram.png)`
-  * *Included Use Cases:* `Login`, `View Available Consultation Slots`, `Request Consultation` (`<<include>> Validate Slot Availability` $\rightarrow$ `<<include>> Prevent Double Booking`), `View Consultation Requests`, `Cancel Consultation`, `View Booking Status`, `Select Consultation Type`, `Create Consultation Slots`, `Manage Consultation Slots`, `Approve Consultation Requests`, `Reject Consultation Requests`, `View Upcoming Consultations`, `Update Consultation Status`, `Manage Meeting Link / Location`.
-* **Class Diagram:** `[View Class Diagram](./docs/class_diagram.png)`
-* **Sequence Diagram:** `[View Sequence Diagram](./docs/sequence_diagram.png)`
-* **Database / ER Diagram:** `[View ER Diagram](./docs/er_diagram.png)`
-* **User Interface Design:** `[View UI Design](./docs/ui_design.png)`
-
----
-
-## 5. Compulsory Code Modifications (Deliverable 4)
+## 4. Compulsory Code Modifications (Deliverable 4)
 
 ### Modification 1: Consultation Status Lifecycle
+
 * **Responsible Member:** CHAN ZHENG HAO (311873)
 * **Workflow Supported:**
   * `Pending` $\rightarrow$ `Approved` $\rightarrow$ `Completed`
@@ -143,40 +131,33 @@ Non-functional requirements describe the quality attributes and performance stan
 * **Implementation Summary:** Updated database schema, backend business logic, and user interface to track and transition consultation statuses accurately.
 
 ### Modification 2: Prevent Double Booking
+
 * **Responsible Member:** SEE EE VONNE (312626)
 * **Validation Rule:** Prevents two students from booking the same lecturer and consultation time slot.
 * **Error Message Displayed:** `"This consultation slot is no longer available."`
 * **Implementation Summary:** Added slot availability validation before booking confirmation to block conflicting appointments.
 
 ### Modification 3: Add Consultation Type
+
 * **Responsible Member:** FOONG HOE YIEN (312169)
 * **Supported Modes:** `Face-to-Face` or `Online`
 * **Conditional Logic:**
   * If `Online` is selected $\rightarrow$ Allows the lecturer to provide a meeting link.
   * If `Face-to-Face` is selected $\rightarrow$ Displays the consultation location.
 
-### Modification 4: Improve an Existing Function (Collaborative)
-* **Responsible Members:** CHAN ZHENG HAO, SEE EE VONNE, FOONG HOE YIEN
-* **Original Function:** *[Insert selected function, e.g., Login validation / Appointment search / Date filtering]*
-* **Problem / Weakness:** *[Describe original limitation]*
-* **Code Modified:** *[List modified files]*
-* **Improvement:** *[Describe enhancement made]*
-* **Testing:** Verified via Test Case TC-10.
-
 ---
 
-## 6. Software Testing (Deliverable 4)
+## 5. Software Testing (Deliverable 4)
 
 | Test ID | Test Case | Input | Expected Result | Actual Result | Pass / Fail |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| --- | --- | --- | --- | --- | --- |
 | **TC-01** | Successful Login | Valid registered student/lecturer credentials | User logs in successfully and is redirected to the dashboard. | *-* | **-** |
-| **TC-02** | Invalid Login | Unregistered email or incorrect password | Login is rejected with an error message. | *Pending / As expected* | **PASS** |
-| **TC-03** | Successful Booking | Student selects an open slot, chooses consultation type, and submits request | Booking is created with status `Pending`. | *Pending / As expected* | **PASS** |
-| **TC-04** | Double Booking | Student attempts to book a lecturer's time slot that is already booked | System blocks booking and displays: `"This consultation slot is no longer available."` | *Pending / As expected* | **PASS** |
-| **TC-05** | Booking Cancellation | Student clicks cancel on an existing consultation request | Booking is cancelled and the slot availability is updated. | *Pending / As expected* | **PASS** |
-| **TC-06** | Approval / Rejection | Lecturer approves or rejects a `Pending` consultation request | Consultation status updates to `Approved` or `Rejected`. | *Pending / As expected* | **PASS** |
-| **TC-07** | Completed Consultation | Lecturer updates an `Approved` consultation after the session | Consultation status updates from `Approved` $\rightarrow$ `Completed`. | *Pending / As expected* | **PASS** |
-| **TC-08** | Face-to-Face Consultation | Student selects `Face-to-Face` and lecturer provides room location | System displays the physical consultation location. | *Pending / As expected* | **PASS** |
-| **TC-09** | Online Consultation | Student selects `Online` and lecturer provides a meeting link | System displays the online meeting link for the session. | *Pending / As expected* | **PASS** |
-| **TC-10** | Existing Function Improvement *(Mod 4)* | *[Insert test input for Mod 4]* | *[Insert expected result for Mod 4]* | *Pending / As expected* | **PASS** |
+| **TC-02** | Invalid Login | Unregistered email or incorrect password | Login is rejected with an error message. | *-* | **-** |
+| **TC-03** | Successful Booking | Student selects an open slot, chooses consultation type, and submits request | Booking is created with status `Pending`. | *-* | **-** |
+| **TC-04** | Double Booking | Student attempts to book a lecturer's time slot that is already booked | System blocks booking and displays: `"This consultation slot is no longer available."` | *-* | **-** |
+| **TC-05** | Booking Cancellation | Student clicks cancel on an existing consultation request | Booking is cancelled and the slot availability is updated. | *-* | **-** |
+| **TC-06** | Approval / Rejection | Lecturer approves or rejects a `Pending` consultation request | Consultation status updates to `Approved` or `Rejected`. | *-* | **-** |
+| **TC-07** | Completed Consultation | Lecturer updates an `Approved` consultation after the session | Consultation status updates from `Approved` $\rightarrow$ `Completed`. | *-* | **-** |
+| **TC-08** | Face-to-Face Consultation | Student selects `Face-to-Face` and lecturer provides room location | System displays the physical consultation location. | *-* | **-** |
+| **TC-09** | Online Consultation | Student selects `Online` and lecturer provides a meeting link | System displays the online meeting link for the session. | *-* | **-** |
 
